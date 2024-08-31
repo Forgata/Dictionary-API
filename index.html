@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This site provide you with definitions from Dictionary API."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Diction | Find meanings</title>
+  </head>
+  <body>
+    <div class="intro" id="intro">
+      <nav>
+        <div class="nav-links">
+          <a href="#" class="nav-link">Home</a>
+          <a href="#" class="nav-link">About</a>
+          <a href="#" class="nav-link">Contact</a>
+        </div>
+      </nav>
+      <div class="header-section">
+        <div class="title">
+          <header>Diction</header>
+          <span>Find your meanings</span>
+        </div>
+        <div class="search-field">
+          <input
+            type="text"
+            class="search-holder"
+            name="search field"
+            id="placeholder"
+            placeholder="Search meanings of words"
+          />
+          <button type="button" class="btn" onclick="handleSubmit()">
+            Search
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="search-results">
+        <header class="word">
+          <div class="audio-btn">
+            <button type="button" onclick="playAudio()">
+              <img src="vol.svg" alt="volume" />
+            </button>
+          </div>
+          <div>
+            <h4 class="typed-word"></h4>
+            <div class="add-meanings">
+              <span class="phonetic"></span>
+              <span class="part-speech"></span>
+            </div>
+          </div>
+        </header>
+        <ol class="definitions">
+          <li class="def">
+            <div class="def1"></div>
+          </li>
+          <li class="def">
+            <div class="def2"></div>
+          </li>
+          <li class="def">
+            <div class="def3"></div>
+          </li>
+          <li class="def">
+            <div class="def4"></div>
+          </li>
+        </ol>
+      </div>
+    </main>
+    <!-- <div class="loading-screen loading">
+      <header class="load-msg">Loading...</header>
+    </div> -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
